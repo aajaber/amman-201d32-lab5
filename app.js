@@ -11,7 +11,7 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) { //eslint-disable-line
 
     let problemOneSolution= a+ b;
-    return [problemOneSolution, 'The sum of 4 and 7 is 11.'];
+    return [problemOneSolution, 'The sum of '+a+' and '+b+' is '+problemOneSolution+'.'];
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -30,7 +30,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
 let problemTwoSolution = a * b;
-return [problemTwoSolution, 'The product of '+ 5+ ' and ' +9 +' is '+ 45+'.'];
+return [problemTwoSolution, 'The product of '+ a+ ' and ' +b +' is '+ problemTwoSolution+'.'];
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -52,10 +52,19 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
 
+    let problemThreeSolutionSum= sum(a,b) [0] ;
+    problemThreeSolutionSum=sum(problemThreeSolutionSum,c)[0];
+
+    
+    let problemThreeSolutionProduct=  multiply(a,b)[0];
+    problemThreeSolutionProduct=multiply(problemThreeSolutionProduct,c)[0];
+
+    return [problemThreeSolutionSum,problemThreeSolutionProduct,a+ ' and ' +b+ ' and ' +c+ ' sum to ' + problemThreeSolutionSum+'.','The product of ' +a+ ' and '+ b +' and ' +c+ ' is ' +problemThreeSolutionProduct+'.'];
+    
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4, 7, 5);
+ testSumAndMultiply(4, 7, 5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
