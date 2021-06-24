@@ -59,8 +59,10 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
     let problemThreeSolutionProduct=  multiply(a,b)[0];
     problemThreeSolutionProduct=multiply(problemThreeSolutionProduct,c)[0];
 
+    //console.log([problemThreeSolutionSum,problemThreeSolutionProduct,a+ ' and ' +b+ ' and ' +c+ ' sum to ' + problemThreeSolutionSum+'.','The product of ' +a+ ' and '+ b +' and ' +c+ ' is ' +problemThreeSolutionProduct+'.']);
     return [problemThreeSolutionSum,problemThreeSolutionProduct,a+ ' and ' +b+ ' and ' +c+ ' sum to ' + problemThreeSolutionSum+'.','The product of ' +a+ ' and '+ b +' and ' +c+ ' is ' +problemThreeSolutionProduct+'.'];
     
+
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
